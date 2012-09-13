@@ -1,0 +1,13 @@
+<html>
+<head>
+	<title>{{page_title}}</title>
+</head>
+<body>
+	<div id="header">
+		<div id="nav">
+			<div id="logo">
+				<a href="/">Logo</a>
+			</div>
+		</div>
+	</div>
+	<div id="body">
