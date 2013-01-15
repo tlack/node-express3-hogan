@@ -3,7 +3,8 @@
  * Module dependencies.
  */
 
-var express = require('express')
+var config = require('./config');
+var express = require('express');
 var http = require('http');
 var path = require('path');
 var hogan = require('./hogan');
@@ -11,7 +12,7 @@ var routes = require('./routes');
 var app = express();
 
 app.configure(function(){
-  app.set('port', process.env.PORT || 3000);
+  app.set('port', process.env.PORT || config.port);
 	app.engine('hogan', hogan);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'hogan');
